@@ -23,7 +23,7 @@ function initializeCode() {
     wiki_text.className = "wiki-text";
     wiki_text.innerText = "TEST 2";
     var image_container = document.createElement("div");
-    image_container.className = "img_container";
+    image_container.className = "img-container";
     var wiki_img = document.createElement("img");
     wiki_img.className = "wiki-img";
 
