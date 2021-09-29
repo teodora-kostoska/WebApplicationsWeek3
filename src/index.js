@@ -9,6 +9,8 @@ if (document.readyState !== "loading") {
 }
 
 function initializeCode() {
+  var container = document.createElement("div");
+  container.className = "container";
   for (var i = 0; i < 5; i++) {
     var wiki_item = document.createElement("div");
     wiki_item.className = "wiki-item";
@@ -30,9 +32,9 @@ function initializeCode() {
     wiki_content.appendChild(image_container);
     wiki_item.appendChild(wiki_content);
     wiki_content.appendChild(wiki_text);
-    var div1 = document.getElementsByClassName("container");
-    div1[0].appendChild(wiki_item);
+    container.appendChild(wiki_item);
   }
+  document.body.appendChild(container);
   var dogs = ["pug", "retriever", "beagle", "coonhound", "spaniel"];
   for (var j = 0; j < 5; j++) {
     getWebContent(dogs[j], j);
